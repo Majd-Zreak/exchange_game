@@ -1,0 +1,18 @@
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\bin\Debug\exchange game.exe
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\bin\Debug\exchange game.pdb
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.Form_login.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange game.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange game.exe
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange game.pdb
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.main_form.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.frm.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.trading_order.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\bin\Debug\exchange game.exe.config
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.show_trades.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.Sign_up_newMember.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.userName_signIn_form.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.issuer_dispaly_form.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.my_wallet_form.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\exchange game\exchange game\obj\Debug\exchange_game.presentationLay.order_trades.resources

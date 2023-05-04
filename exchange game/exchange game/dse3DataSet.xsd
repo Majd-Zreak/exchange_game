@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dse3DataSet" targetNamespace="http://tempuri.org/dse3DataSet.xsd" xmlns:mstns="http://tempuri.org/dse3DataSet.xsd" xmlns="http://tempuri.org/dse3DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dse3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dse3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.exchange_game.Properties.Settings.GlobalReference.Default.dse3ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="accountsTableAdapter" GeneratorDataComponentClassName="accountsTableAdapter" Name="accounts" UserDataComponentName="accountsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dse3ConnectionString (Settings)" DbObjectName="dse3.dbo.accounts" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT acc_typ, com_id, acc_serial_no FROM dbo.accounts</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="acc_typ" DataSetColumn="acc_typ" />
+              <Mapping SourceColumn="com_id" DataSetColumn="com_id" />
+              <Mapping SourceColumn="acc_serial_no" DataSetColumn="acc_serial_no" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dse3DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dse3DataSet" msprop:Generator_UserDSName="dse3DataSet" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="accounts" msprop:Generator_UserTableName="accounts" msprop:Generator_RowDeletedName="accountsRowDeleted" msprop:Generator_TableClassName="accountsDataTable" msprop:Generator_RowChangedName="accountsRowChanged" msprop:Generator_RowClassName="accountsRow" msprop:Generator_RowChangingName="accountsRowChanging" msprop:Generator_RowEvArgName="accountsRowChangeEvent" msprop:Generator_RowEvHandlerName="accountsRowChangeEventHandler" msprop:Generator_TablePropName="accounts" msprop:Generator_TableVarName="tableaccounts" msprop:Generator_RowDeletingName="accountsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="acc_typ" msprop:Generator_UserColumnName="acc_typ" msprop:Generator_ColumnPropNameInRow="acc_typ" msprop:Generator_ColumnVarNameInTable="columnacc_typ" msprop:Generator_ColumnPropNameInTable="acc_typColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="com_id" msprop:Generator_UserColumnName="com_id" msprop:Generator_ColumnPropNameInRow="com_id" msprop:Generator_ColumnVarNameInTable="columncom_id" msprop:Generator_ColumnPropNameInTable="com_idColumn" type="xs:int" />
+              <xs:element name="acc_serial_no" msprop:Generator_UserColumnName="acc_serial_no" msprop:Generator_ColumnPropNameInRow="acc_serial_no" msprop:Generator_ColumnVarNameInTable="columnacc_serial_no" msprop:Generator_ColumnPropNameInTable="acc_serial_noColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

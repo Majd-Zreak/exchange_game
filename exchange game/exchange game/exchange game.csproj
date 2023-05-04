@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B876979-A777-4BEE-8A37-3219D9A37A21}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>exchange_game</RootNamespace>
+    <AssemblyName>exchange game</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="businessLay\Cls_Login.cs" />
+    <Compile Include="businessLay\Cls_show_trades.cs" />
+    <Compile Include="businessLay\Cls_trading_order.cs" />
+    <Compile Include="businessLay\Cls_trading_order_on_invester.cs" />
+    <Compile Include="dataAccessLay\dataAccessLay.cs" />
+    <Compile Include="dse3DataSet.cs">
+      <DependentUpon>dse3DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dse3DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dse3DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dse3DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dse3DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dse3DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dse3DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dse3DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dse3DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dse3DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dse3DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\Form_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\Form_login.Designer.cs">
+      <DependentUpon>Form_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\frm.Designer.cs">
+      <DependentUpon>frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\issuer_dispaly_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\issuer_dispaly_form.Designer.cs">
+      <DependentUpon>issuer_dispaly_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\my_wallet_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\my_wallet_form.Designer.cs">
+      <DependentUpon>my_wallet_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\order_trades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\order_trades.Designer.cs">
+      <DependentUpon>order_trades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\Sign_up_newMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\Sign_up_newMember.Designer.cs">
+      <DependentUpon>Sign_up_newMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\main_form.Designer.cs">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\show_trades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\show_trades.Designer.cs">
+      <DependentUpon>show_trades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\trading_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\trading_order.Designer.cs">
+      <DependentUpon>trading_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLay\userName_signIn_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentationLay\userName_signIn_form.Designer.cs">
+      <DependentUpon>userName_signIn_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="presentationLay\Form_login.resx">
+      <DependentUpon>Form_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentationLay\frm.resx">
+      <DependentUpon>frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentationLay\issuer_dispaly_form.resx">
+      <DependentUpon>issuer_dispaly_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentationLay\my_wallet_form.resx">
+      <DependentUpon>my_wallet_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentationLay\order_trades.resx">
+      <DependentUpon>order_trades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentationLay\Sign_up_newMember.resx">
+      <DependentUpon>Sign_up_newMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentationLay\main_form.resx">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentationLay\show_trades.resx">
+      <DependentUpon>show_trades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentationLay\trading_order.resx">
+      <DependentUpon>trading_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentationLay\userName_signIn_form.resx">
+      <DependentUpon>userName_signIn_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="dse3DataSet.xsc">
+      <DependentUpon>dse3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dse3DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dse3DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dse3DataSet.xss">
+      <DependentUpon>dse3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dse3DataSet1.xsc">
+      <DependentUpon>dse3DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dse3DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dse3DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dse3DataSet1.xss">
+      <DependentUpon>dse3DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dse3DataSet2.xsc">
+      <DependentUpon>dse3DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dse3DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dse3DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dse3DataSet2.xss">
+      <DependentUpon>dse3DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dse3DataSet3.xsc">
+      <DependentUpon>dse3DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dse3DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dse3DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dse3DataSet3.xss">
+      <DependentUpon>dse3DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dse3DataSet4.xsc">
+      <DependentUpon>dse3DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dse3DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dse3DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dse3DataSet4.xss">
+      <DependentUpon>dse3DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
